@@ -1,0 +1,43 @@
+
+
+<html>
+<head>
+<title>CCP Login</title>
+<link rel="stylesheet" href="Login.css">
+</head>
+<body>
+	<div class="login-div">
+		<div>
+			<img src="images/logo.jpg" class="logo">
+		</div>
+		<div class="title">Customer Credit Points</div>
+		<div class="sub-title">Login</div>
+		<div class="fields">
+			<div class="username">
+				<input type="username" class="user-input" placeholder="username" />
+			</div>
+			<div class="password">
+				<input type="password" class="pass-input" placeholder="password" />
+			</div>
+		</div>
+		<button class="login-button">Login</button>
+		<div class="link">
+			<a href="#">Forget Password?</a> or <a href="#">Signup</a>
+
+		</div>
+		<script>
+			function validateform() {
+				var name = document.myform.name.value;
+				var password = document.myform.password.value;
+
+				if (name == null || name == "") {
+					alert("Name can't be blank");
+					return false;
+				} else if (password.length < 6) {
+					alert("Password must be at least 6 characters long.");
+					return false;
+				}
+			}
+		</script>
+</body>
+</html>
